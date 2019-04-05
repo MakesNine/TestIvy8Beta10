@@ -1,12 +1,13 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { DemoComponent } from './demo/demo.component';
+import { DemoSimpleComponent } from './demo/demo-simple.component';
+import { DemoExtendsComponent } from './demo/demo-extends.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
-    {path: '', component: DemoComponent}
+    {path: '', component: DemoExtendsComponent}
     ])
   ],
   exports: [

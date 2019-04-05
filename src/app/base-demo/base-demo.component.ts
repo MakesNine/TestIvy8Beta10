@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
-import { DemoChildComponent} from '../demo/children/demo-child.component';
+// import { DemoChildComponent} from '../demo/children/demo-child.component';
 
 @Component({
   selector: 'app-basedemo',
@@ -8,7 +8,7 @@ import { DemoChildComponent} from '../demo/children/demo-child.component';
 
 })
 export class BaseDemoComponent implements OnInit, AfterViewInit {
-  @ViewChild(DemoChildComponent) demoChild: DemoChildComponent;
+//  @ViewChild(DemoChildComponent) demoChild: DemoChildComponent;
 
   constructor() {
       console.log(`Base constructor executing as expected`);
@@ -18,7 +18,11 @@ export class BaseDemoComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.demoChild.sayHi();
+    // this.demoChild.sayHi('Base class');
+  }
+
+  processClick() {
+    console.log(`Received button click in base class`);
   }
 
 }

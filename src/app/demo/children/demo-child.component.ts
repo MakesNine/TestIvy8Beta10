@@ -7,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
 export class DemoChildComponent implements OnInit {
 
 
-  constructor() { }
+  constructor() {
+    console.log(`Constructor in child component has been called`);
+  }
 
   ngOnInit() {
 
   }
 
-  sayHi() {
-    console.log(`Just saying Hi from child`);
+  sayHi(name: string) {
+    console.log(`Just saying Hi ${name} from child`);
 
+  }
+
+  processClick() {
+    console.log(`Button in child clicked`);
   }
 
 

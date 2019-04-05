@@ -4,11 +4,12 @@ import { BaseDemoComponent } from '../../base-demo/base-demo.component';
 import { DemoChildComponent} from '../children/demo-child.component';
 
 @Component({
-  selector: 'app-demo',
-  templateUrl: './demo.component.html',
-  styleUrls: ['./demo.component.css']
+  selector: 'app-demo-extends',
+  templateUrl: './demo-extends.component.html'
 })
-export class DemoComponent extends BaseDemoComponent implements OnInit {
+
+export class DemoExtendsComponent extends BaseDemoComponent implements OnInit {
+// export class DemoExtendsComponent implements OnInit {
   @ViewChild(DemoChildComponent) demoChild: DemoChildComponent;
 
   constructor() {
@@ -17,6 +18,7 @@ export class DemoComponent extends BaseDemoComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 
 }
