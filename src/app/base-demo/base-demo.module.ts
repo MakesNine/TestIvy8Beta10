@@ -7,6 +7,7 @@ import { BaseDemoComponent } from './base-demo.component';
   declarations: [ BaseDemoComponent ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ BaseDemoComponent ]
 })
 export class BaseDemoModule { }

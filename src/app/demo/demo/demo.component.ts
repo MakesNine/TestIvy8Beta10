@@ -9,7 +9,7 @@ import { DemoChildComponent} from '../children/demo-child.component';
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent extends BaseDemoComponent implements OnInit {
-  @ViewChild(DemoChildComponent) demoChild: DemoChildComponent;
+  // @ViewChild(DemoChildComponent) demoChild: DemoChildComponent;
 
   constructor() {
      super();
